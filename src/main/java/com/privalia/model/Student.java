@@ -1,12 +1,48 @@
 package com.privalia.model;
 
+import com.privalia.collections.Address;
+
+import java.util.List;
+
+import com.privalia.collections.*;
+
 public class Student {
 	private Integer idStudent;
 	private String name;
 	private String surname;
 	private Integer age;
+	private Address address;
+	private List<Teacher> teacher;
 	
 	
+	/**
+	 * @return the teacher
+	 */
+	public List<Teacher> getTeacher() {
+		return teacher;
+	}
+
+	/**
+	 * @param teacher the teacher to set
+	 */
+	public void setTeacher(List<Teacher> teacher) {
+		this.teacher = teacher;
+	}
+
+	/**
+	 * @return the address
+	 */
+	public Address getAddress() {
+		return address;
+	}
+
+	/**
+	 * @param address the address to set
+	 */
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
 	/**
 	 * @return the idStudent
 	 */
@@ -63,15 +99,36 @@ public class Student {
 		this.age = age;
 	}
 	
-	public Student(Integer idStudent, String name, String surname, Integer age){
+	public Student(Integer idStudent, String name, String surname, Integer age, Address address){
 		this.idStudent = idStudent;
 		this.name = name;
 		this.surname = surname;
 		this.age = age;
+		this.address = address;
 	}
 	
-	public Student(){
+
+	
+	public Student(Address address) {
+		this.setAddress(address);
+	}
+	
+	public Student(Student student, Address address) {
+		this.age = student.age;
+		this.address = student.address;
+	}
+	
+	public Student (int id, String name, String surname, int age, Address address) {
 		
+	}
+	
+	
+	public Student() {
+		
+	}
+	
+	public static Student getStudent() {
+		return new Student();
 	}
 
 	/* (non-Javadoc)
