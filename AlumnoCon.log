@@ -1,0 +1,8 @@
+2018-09-26 15:02:12 INFO  StudentDAOTest:34 - StudentDaoIntegrationTest Started
+2018-09-26 15:02:12 ERROR StudentDAOTest:40 - src\test\resources\config.properties (El sistema no puede encontrar el archivo especificado)
+2018-09-26 15:02:42 INFO  StudentDAOTest:34 - StudentDaoIntegrationTest Started
+2018-09-26 15:02:42 WARN  FileUtil:26 - El fichero ya existe
+2018-09-26 15:02:42 INFO  StudentDAOTest:64 - 1,UC,PESCE,43
+2018-09-26 15:02:42 INFO  StudentDAOTest:65 - 1,UC,PESCE,43
+2018-09-26 15:02:42 INFO  StudentDAOTest:67 - StudentDaoTest testAdd Finished
+2018-09-26 15:02:42 INFO  StudentDAOTest:54 - StudentDaoTest Finished
